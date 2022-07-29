@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: rgb(255, 255, 255);
+  --color2: rgb(5, 10, 38);
+  --color3: rgb(231, 0, 76);
+}
+
+body {
+  background-color: var(--color2);
+  padding: 90px 0;
+}
+
+.calculator {
+  width: 400px;
+  margin: 0 auto;
+  background-color: var(--color3);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px var(--color1);
+}
+
+.calculator h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--color2);
+  padding-bottom: 10px;
+}
+
+.calculator-screen {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: var(--color1);
+  color: var(--color2) ;
+  font: normal 3rem serif;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid var(--color2);
+}
+
+#previous-operation, #current-operation {
+  padding: 0.2rem;
+  overflow-wrap: break-word;
+  min-height: 1.6rem;
+}
+
+#previous-operation {
+  color: var(--color3);
+  font-size: 1.8rem;
+}
+
+#current-operation {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.calculator button {
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid var(--color2);
+}
+
+button:hover {
+  background-color: var(--color2);
+  color: var(--color1);
+}
